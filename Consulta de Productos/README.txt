@@ -1,0 +1,2 @@
+Buenos dias/tardes/noches profesor, este trabajo usa enteramente como vase el ejemplo que usted envio, puesto a que no he podido replicarlo de forma autonoma, el resto de ejercicios usara el código como base pero con distinto nombre
+Saludos
