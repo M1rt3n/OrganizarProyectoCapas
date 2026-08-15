@@ -1,0 +1,114 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Consulta Vehiculos.Datos/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Consulta Vehiculos.Datos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Consulta Vehiculos.Datos.dll": {}
+        }
+      },
+      "Consulta Vehiculos.Negocios/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Consulta Vehiculos.Datos": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Consulta Vehiculos.Negocios.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Consulta Vehiculos.Negocios.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Consulta Vehiculos.Datos/1.0.0": {
+      "type": "project",
+      "path": "../Consulta Vehiculos.Datos/Consulta Vehiculos.Datos.csproj",
+      "msbuildProject": "../Consulta Vehiculos.Datos/Consulta Vehiculos.Datos.csproj"
+    },
+    "Consulta Vehiculos.Negocios/1.0.0": {
+      "type": "project",
+      "path": "../Consulta Vehiculos.Negocios/Consulta Vehiculos.Negocios.csproj",
+      "msbuildProject": "../Consulta Vehiculos.Negocios/Consulta Vehiculos.Negocios.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Consulta Vehiculos.Negocios >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\GAB1\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\GAB1\\source\\repos\\Consulta_Vehiculos_Patente\\Consulta Vehiculos.Presentación\\Consulta Vehiculos.Presentación.csproj",
+      "projectName": "Consulta Vehiculos.Presentación",
+      "projectPath": "C:\\Users\\GAB1\\source\\repos\\Consulta_Vehiculos_Patente\\Consulta Vehiculos.Presentación\\Consulta Vehiculos.Presentación.csproj",
+      "packagesPath": "C:\\Users\\GAB1\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\GAB1\\source\\repos\\Consulta_Vehiculos_Patente\\Consulta Vehiculos.Presentación\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\GAB1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "C:\\Users\\GAB1\\source\\repos\\Consulta_Vehiculos_Patente\\Consulta Vehiculos.Negocios\\Consulta Vehiculos.Negocios.csproj": {
+              "projectPath": "C:\\Users\\GAB1\\source\\repos\\Consulta_Vehiculos_Patente\\Consulta Vehiculos.Negocios\\Consulta Vehiculos.Negocios.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

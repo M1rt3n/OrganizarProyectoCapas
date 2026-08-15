@@ -1,0 +1,196 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\GAB1\\source\\repos\\Consulta_Vehiculos_Patente\\Consulta Vehiculos.Presentación\\Consulta Vehiculos.Presentación.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\GAB1\\source\\repos\\Consulta_Vehiculos_Patente\\Consulta Vehiculos.Datos\\Consulta Vehiculos.Datos.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\GAB1\\source\\repos\\Consulta_Vehiculos_Patente\\Consulta Vehiculos.Datos\\Consulta Vehiculos.Datos.csproj",
+        "projectName": "Consulta Vehiculos.Datos",
+        "projectPath": "C:\\Users\\GAB1\\source\\repos\\Consulta_Vehiculos_Patente\\Consulta Vehiculos.Datos\\Consulta Vehiculos.Datos.csproj",
+        "packagesPath": "C:\\Users\\GAB1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\GAB1\\source\\repos\\Consulta_Vehiculos_Patente\\Consulta Vehiculos.Datos\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\GAB1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\GAB1\\source\\repos\\Consulta_Vehiculos_Patente\\Consulta Vehiculos.Negocios\\Consulta Vehiculos.Negocios.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\GAB1\\source\\repos\\Consulta_Vehiculos_Patente\\Consulta Vehiculos.Negocios\\Consulta Vehiculos.Negocios.csproj",
+        "projectName": "Consulta Vehiculos.Negocios",
+        "projectPath": "C:\\Users\\GAB1\\source\\repos\\Consulta_Vehiculos_Patente\\Consulta Vehiculos.Negocios\\Consulta Vehiculos.Negocios.csproj",
+        "packagesPath": "C:\\Users\\GAB1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\GAB1\\source\\repos\\Consulta_Vehiculos_Patente\\Consulta Vehiculos.Negocios\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\GAB1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\GAB1\\source\\repos\\Consulta_Vehiculos_Patente\\Consulta Vehiculos.Datos\\Consulta Vehiculos.Datos.csproj": {
+                "projectPath": "C:\\Users\\GAB1\\source\\repos\\Consulta_Vehiculos_Patente\\Consulta Vehiculos.Datos\\Consulta Vehiculos.Datos.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\GAB1\\source\\repos\\Consulta_Vehiculos_Patente\\Consulta Vehiculos.Presentación\\Consulta Vehiculos.Presentación.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\GAB1\\source\\repos\\Consulta_Vehiculos_Patente\\Consulta Vehiculos.Presentación\\Consulta Vehiculos.Presentación.csproj",
+        "projectName": "Consulta Vehiculos.Presentación",
+        "projectPath": "C:\\Users\\GAB1\\source\\repos\\Consulta_Vehiculos_Patente\\Consulta Vehiculos.Presentación\\Consulta Vehiculos.Presentación.csproj",
+        "packagesPath": "C:\\Users\\GAB1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\GAB1\\source\\repos\\Consulta_Vehiculos_Patente\\Consulta Vehiculos.Presentación\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\GAB1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\GAB1\\source\\repos\\Consulta_Vehiculos_Patente\\Consulta Vehiculos.Negocios\\Consulta Vehiculos.Negocios.csproj": {
+                "projectPath": "C:\\Users\\GAB1\\source\\repos\\Consulta_Vehiculos_Patente\\Consulta Vehiculos.Negocios\\Consulta Vehiculos.Negocios.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
