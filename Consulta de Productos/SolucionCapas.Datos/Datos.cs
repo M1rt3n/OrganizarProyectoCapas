@@ -5,17 +5,30 @@ namespace SolucionCapas.Datos
 {
     public class ProductoDatos
     {
-        private List<(string Código, string Nombre, int Precio)> _tablaProductos = new List<(string, string, int)>
-        {
-            ("14628723", "Heladera", 15000),
-            ("19236094", "Silla", 3500)
-        };
+        private string _conexionString =
+        "Server=127.0.0.1;Port=3306;Database=almacen;Uid=root;Pwd=;";
+
 
         public (string Código, string Nombre, int Precio)? BuscarPorCódigo(string código)
         {
-            var resultado = _tablaProductos.FirstOrDefault(p => p.Código == código);
-            if (resultado.Código == null) return null;
-            return resultado;
+            string query = "SELECT Código, Nombre, Precio FROM empleado WHERE Código = @Código";
+            using (MySqlConnection conexion = new MySqlConnection(_conexionString))
+            {
+                MySqlCommand comando = new MySqlCommand(query, conexion);
+                comando.Parameters.AddWithValue("@Código", código);
+                conexion.Open();
+                using (MySqlDataReader reader = comando.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        string códigoDb = reader["Código"].ToString();
+                        string nombreDb = reader["Nombre"].ToString();
+                        int precioDb = reader.GetInt32("Precio");
+                        return (códigoDb, nombreDb, precioDb);
+                    }
+                }
+            }
+            return null;
         }
     }
 }
