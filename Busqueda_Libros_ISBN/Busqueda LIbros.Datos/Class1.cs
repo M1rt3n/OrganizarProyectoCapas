@@ -2,17 +2,32 @@
 {
     public class LibrosDatos
     {
-        private List<(long ISBN,string Título, string Autor, bool Disponible)> _tablaLibros = new List<(long, string, string, bool)>
-        {
-            (204172741094, "Cuentos de Terramar", "Ursula K. Le Guin", false),
-            (289461249863, "El Señor de los Anillos", "J. R. R. Tolkien", true)
-        };
+        private string _conexionString =
+        "Server=127.0.0.1;Port=3306;Database=biblioteca;Uid=root;Pwd=;";
 
-        public (long ISBN, string Título, string Autor, bool Disponible)? BuscarPorISBN(long ISBN)
+
+        public (long ISBN, string Título, string Autor, bool Disponible)? BuscarPorISBN(long isbn)
         {
-            var resultado = _tablaLibros.FirstOrDefault(p => p.ISBN == ISBN);
-            if (resultado.ISBN == null) return null;
-            return resultado;
+            string query = "SELECT ISBN, Título, Autor, Disponible FROM libro WHERE ISBN = @ISBN";
+            using (MySqlConnection conexion = new MySqlConnection(_conexionString))
+            {
+                MySqlCommand comando = new MySqlCommand(query, conexion);
+                comando.Parameters.AddWithValue("@ISBN", isbn);
+                conexion.Open();
+                using (MySqlDataReader reader = comando.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        int isbnDb = reader.GetInt32("ISBN");
+                        string títuloDb = reader["Título"].ToString();
+                        string autorDb = reader["Autor"].ToString();
+                        string disponibleDb = reader["Disponible"].ToString();
+
+                        return (isbnDb, títuloDb, autorDb, disponibleDb);
+                    }
+                }
+            }
+            return null;
         }
     }
 }
