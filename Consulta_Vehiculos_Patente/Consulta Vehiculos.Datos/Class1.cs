@@ -1,18 +1,31 @@
-﻿namespace Consulta_Vehiculos.Datos
+﻿using MySql.Data.MySqlClient;
+namespace Consulta_Vehiculos.Datos
 {
     public class VehiculosDatos
     {
-        private List<(string Patente, string Modelo, int Deudas)> _tablaVehiculos = new List<(string, string, int)>
-        {
-            ("872415", "Ferrari", 1000),
-            ("982645", "Chevrolt", 0)
-        };
+        private string _conexionString =
+     "Server=127.0.0.1;Port=3306;Database=almacen;Uid=root;Pwd=;";
 
         public (string Patente, string Modelo, int Deudas)? BuscarPorPatente(string patente)
         {
-            var resultado = _tablaVehiculos.FirstOrDefault(p => p.Patente == patente);
-            if (resultado.Patente == null) return null;
-            return resultado;
+            string query = "SELECT Patente, Nombre, Deudas FROM automovil WHERE Patente = @Patente";
+            using (MySqlConnection conexion = new MySqlConnection(_conexionString))
+            {
+                MySqlCommand comando = new MySqlCommand(query, conexion);
+                comando.Parameters.AddWithValue("@Patente", patente);
+                conexion.Open();
+                using (MySqlDataReader reader = comando.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        string patenteDb = reader["Patente"].ToString();
+                        string nombreDb = reader["Nombre"].ToString();
+                        int deudasDb = reader.GetInt32("Deudas");
+                        return (patenteDb, nombreDb, deudasDb);
+                    }
+                }
+            }
+            return null;
         }
     }
 }
